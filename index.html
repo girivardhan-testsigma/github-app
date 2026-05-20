@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">High</span>
+        <span id="highScore" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Speed</span>
+        <span id="speed" class="value">1</span>
+      </div>
+    </header>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <h2 id="overlayTitle">Snake</h2>
+        <p id="overlayMsg">Press Space or click Start</p>
+        <button id="startBtn" type="button">Start</button>
+      </div>
+    </div>
+
+    <footer class="controls">
+      <p>Arrow keys or WASD &middot; Space to pause &middot; R to restart</p>
+    </footer>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
